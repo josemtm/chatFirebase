@@ -1,55 +1,124 @@
-.main-container{
-  margin-top: 40px;
-  margin-bottom: 150px;
+body {
+    background: url(../src/assets/img/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: white;
 }
 
-.puntero{
-  cursor: pointer;
+.main-container {
+    margin-top: 40px;
+    margin-bottom: 150px;
 }
 
-
-.chat-window{
-  padding: 10px;
-  width: 300px;
-  height: 400px;
-  overflow: hidden;
-  border: 1px solid #4080FF;
-  border-radius: 20px;
+.puntero {
+    cursor: pointer;
 }
 
-.app-mensajes{
-  overflow-y:scroll;
-  height:270px;
-  /*background:gray;*/
-  padding: 5px;
+.chat-window {
+    padding: 10px;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #3b4652;
+    opacity: .85;
+    box-shadow: 0px 0px 3px #848484;
+}
+
+.app-mensajes {
+    overflow-y: scroll;
+    height: 270px;
+    /*background:gray;*/
+    padding: 5px;
 }
 
 
 /* Animaciones */
+
 .animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
 .fast {
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .fadeIn {
-  animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+.main-section {
+    margin: 0 auto;
+    margin-top: 25%;
+    padding: 0;
+}
+
+.modal-content {
+    background-color: #3b4652;
+    opacity: .85;
+    padding: 0 20px;
+    box-shadow: 0px 0px 3px #848484;
+}
+
+.user-img {
+    margin-top: -50px;
+    margin-bottom: 35px;
+}
+
+.user-img img {
+    width: 100xp;
+    height: 100px;
+    box-shadow: 0px 0px 3px #848484;
+    border-radius: 50%;
+}
+
+.form-group input {
+    height: 42px;
+    font-size: 18px;
+    border: 0;
+    padding-left: 54px;
+    border-radius: 5px;
+}
+
+.form-group::before {
+    font-family: "Font Awesome\ 5 Free";
+    position: absolute;
+    left: 28px;
+    font-size: 22px;
+    padding-top: 4px;
+}
+
+.form-group#user-group::before {
+    content: "\f007";
+}
+
+.form-group#contrasena-group::before {
+    content: "\f023";
+}
+
+.button3 {
+    width: 60%;
+    margin: 5px 0 25px;
+}
+
+.forgot {
+    padding: 5px 0;
+}
+
+.forgot a {
+    color: white;
 }

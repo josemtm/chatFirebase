@@ -1,9 +1,9 @@
-<div class="container main-container">
+<div class="container main-container ">
 
-    <h1>FireChat</h1>
+    <h1 class="text-center">FireChat</h1>
 
     <div class="col-md-12 text-right">
-        <button *ngIf="_cs.usuario.uid" (click)="_cs.logout()" class="btn btn-outline-danger">Salir</button>
+        <button *ngIf="_cs.usuario.uid" (click)="_cs.logout()" class="btn btn-danger">Salir</button>
     </div>
 
     <app-login *ngIf="!_cs.usuario.uid"></app-login>
